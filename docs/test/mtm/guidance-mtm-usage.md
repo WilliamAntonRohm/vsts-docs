@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
 ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.author: sdanie
+author: steved0x
 ms.date: 04/24/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -20,8 +20,8 @@ Azure DevOps and Team Foundation Server (TFS) offer a web-based solution for man
 
 In the past, we have also shipped a client based solution as Microsoft Test Manager. The Test Center in Microsoft Test Manager client is a desktop-based manual testing solution, which has traditionally been used by testers for their manual testing needs (see [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)). 
 
->[!NOTE]
->[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)] This topic will help you understand why [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a more comprehensive solution for manual testing compared to Microsoft Test Manager.
+> [!NOTE]
+> [!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)] This topic will help you understand why [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a more comprehensive solution for manual testing compared to Microsoft Test Manager.
 
 ### Supported combinations
 

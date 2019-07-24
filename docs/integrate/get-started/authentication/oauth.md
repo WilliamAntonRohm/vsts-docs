@@ -7,8 +7,8 @@ description: Use OAuth 2.0 authentication to get started with the REST APIs for 
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
 ms.manager: jillfra
 monikerRange: '>= tfs-2013'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -158,7 +158,7 @@ public string GenerateRequestPostData(string appSecret, string authCode, string 
 }
 ```
 <br>
-**Important:** securely persist the *refresh_token* so your app does not need to prompt the user authorize again. *Access tokens* expire relatively quickly and should not be persisted.
+<strong>Important:</strong> securely persist the <em>refresh_token</em> so your app does not need to prompt the user authorize again. <em>Access tokens</em> expire relatively quickly and should not be persisted.
 
 ## Use the access token
 
@@ -218,7 +218,7 @@ Replace the placeholder values in the sample request body above:
 }
 ```
 <br>
-**Important**: a new refresh token will be issued for the user. Persist this new token and use it the next time you need to acquire a new access token for the user.
+<strong>Important</strong>: a new refresh token will be issued for the user. Persist this new token and use it the next time you need to acquire a new access token for the user.
 
 <a name="scopes"></a>
 

@@ -31,7 +31,7 @@ These measures help teams plan, spot variations in efficiency, and identify pote
 In this article you'll learn:
 
 > [!div class="checklist"] 
-> * How to install and configure the Lead Time and Cycle Time widgets (Analytics service)  
+> * How to install and configure the Lead Time and Cycle Time widgets (Analytics)  
 > * How to interpret the scatter-plot control charts  
 > * How moving average and standard deviation are calculated in the charts
 
@@ -44,6 +44,7 @@ To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulat
 
 
 ## Add the widget to your dashboard   
+
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -54,7 +55,7 @@ To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulat
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-1. If you haven't yet added the [Analytics Marketplace extension](../dashboards/analytics-extension.md), do that now.    
+1. If you haven't yet [enabled or installed Analytics](analytics-extension.md)], do that now. 
 2. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 3. If you haven't yet [added the widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
 
@@ -62,21 +63,22 @@ To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulat
 
 
 <a id="configure-widget"></a>
+
 ## Configure the Cycle Time and Lead Time widgets    
 
 The Configuration dialog for the Cycle Time and Lead Time widgets is the same. You configure these widgets for a team. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).  
 
-0. Choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
+1. Choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose the Configure option icon to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
 
 	<img src="_img/cycle-lead-time-configure-dialog.png" alt="Configure dialog, Lead Time widget" style="border: 2px solid #C3C3C3;" />    
 
-0. For a continuous flow, choose Rolling period and specify the number of days you want to view on the chart.  
+1. For a continuous flow, choose Rolling period and specify the number of days you want to view on the chart.  
 
 	Or, for a fixed scope view, choose and specify the Start date. Choose this view if your team employs a Scrumban process or follows a standard sprint process.  
 
 	The main difference between these two types of charts is that the fixed scope chart will provide information (in most cases) of scope change.    
 
-0. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
+2. Choose Save when done. The following image shows an example Lead Time chart showing 60 days of data. 
    
 	<img src="_img/cycle-lead-time-lt-sample-chart.png" alt="Example CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" /> 
 
@@ -101,12 +103,14 @@ The chart dots represent completed work items where their position on the horizo
 - The band around the trend line shows the standard deviation.
 
 #### Interactive elements include:  
+
 - Hover over any dot to see which work items contributed to the data point and the lead/cycle time for those items  
 - Choose a dot to open the work item or query that lists the work items   
 - To filter the chart, choose a work item type in the legend (![backlog item icon](../../_img/icons/user-story-icon.png),![bug item icon](../../_img/icons/bug-icon.png), or other icon)  to filter on that type; to return to the original chart, refresh the dashboard.  
 
 
 ## Moving average and standard deviation calculations 
+
 The daily moving average value corresponds to the average of data points that fall within the moving average window. 
 The time-based moving average window is calculated based on the current day and previous *N* days, where *N* corresponds to 20% of the number of days the chart displays, rounded down to the nearest odd number. 
 
@@ -117,7 +121,8 @@ If there are no data points that fall within the moving average window, the char
 The standard deviation appears as a band that encompasses the moving average. Standard deviation is calculated based on all data points falling within the same moving average window. Like moving average, if no data points fall within the moving average window, the chart doesn't plot standard deviation.  
 
 
-## Related notes
+## Related articles
+
 We recommend your team review the lead/cycle time charts before or during each retrospective. Use lead time to help estimate delivery times and track service level agreements (SLAs). Use cycle time to identify potential process issues, spot variations in trends, and help with planning.   
 
 - [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)  

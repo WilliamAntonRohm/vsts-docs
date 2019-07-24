@@ -7,9 +7,8 @@ ms.technology: devops-cicd
 ms.assetid: E28912F1-0114-4464-802A-A3A35437FD16
 ms.manager: shasb
 ms.author: shasb
-author: shashankbarsin
-ms.date: 04/17/2019
-monikerRange: 'azure-devops'
+ms.date: 02/12/2019
+monikerRange: '>= tfs-2018'
 ---
 
 # Docker task
@@ -48,7 +47,7 @@ Following are the key benefits of using Docker task as compared to directly usin
   </tr>
   <tr>
     <td><code>containerRegistry</code><br/>Container registry</td>
-    <td>(Optional) Name of the [Docker registry service connection](../../library/service-endpoints.md#sep-docreg)</td>
+    <td>(Optional) Name of the <a href="../../library/service-endpoints.md#sep-docreg" data-raw-source="[Docker registry service connection](../../library/service-endpoints.md#sep-docreg)">Docker registry service connection</a></td>
   </tr>
   <tr>
     <td><code>repository</code><br/>Repository</td>

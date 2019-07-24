@@ -81,20 +81,20 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
- > [!div class="mx-imgBorder"] 
- > ![Save and run button in a new YAML pipeline](_img/save-and-run-button-new-yaml-pipeline.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Save and run button in a new YAML pipeline](_img/save-and-run-button-new-yaml-pipeline.png)
 
-1. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
- If you want to watch your pipeline in action, select the build job.
+   If you want to watch your pipeline in action, select the build job.
 
- > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) template.
+   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) template.
 
- You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
-1. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
-1. See the sections below to learn some of the more common ways to customize your pipeline.
+4. See the sections below to learn some of the more common ways to customize your pipeline.
 
 ::: moniker-end
 
@@ -102,13 +102,13 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 1. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md), and for the template select **ASP.NET Core**. This template automatically adds the tasks you need to build the code in the sample repository.
 
-1. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
+2. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
 
- You now have a working pipeline that's ready for you to customize!
+   You now have a working pipeline that's ready for you to customize!
 
-1. When you're ready to make changes to your pipeline, **Edit** it.
+3. When you're ready to make changes to your pipeline, **Edit** it.
 
-1. See the sections below to learn some of the more common ways to customize your pipeline.
+4. See the sections below to learn some of the more common ways to customize your pipeline.
 
 ::: moniker-end
 
@@ -161,7 +161,7 @@ Make sure that you have the necessary version of the .NET Core SDK and runtime i
 
 NuGet is a popular way to depend on code that you don't build. You can download NuGet packages by running 
 the `dotnet restore` command either through the 
-[.NET Core](../tasks/build/dotnet-core.md) task or directly in a script in your pipeline.
+[.NET Core](../tasks/build/dotnet-core-cli.md) task or directly in a script in your pipeline.
 
 ::: moniker range=">= tfs-2018"
 
@@ -308,7 +308,7 @@ To install a .NET Core global tool like [dotnetsay](https://www.nuget.org/packag
 
 1. Add the **.NET Core** task and set the following properties:
    * **Command**: custom.
-    * **Path to projects**: _leave empty_.
+     * **Path to projects**: _leave empty_.
    * **Custom command**: tool.
    * **Arguments**: `install -g dotnetsay`.
 

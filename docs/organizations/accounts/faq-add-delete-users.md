@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 04/24/2019
-monikerRange: 'azure-devops'
+ms.date: 06/12/2019
+monikerRange: '>= tfs-2013'
 ---
 
 # Troubleshoot adding and deleting organization users
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 ## Permissions
 
@@ -130,7 +130,7 @@ A: This might happen for different reasons (although the user can continue to [w
 
 	*	The user's access level no longer meets the extension's requirements. Most extensions require at least Basic access, not Stakeholder access. For more information, see the extension's description in the [Marketplace](https://marketplace.visualstudio.com).
 
-	*	The extension was uninstalled. Users can reinstall the extension by visiting the extension page in the [Marketplace](https://marketplace.visualstudio.com).
+	*	The extension was uninstalled. Users can [reinstall the extension](../../marketplace/install-extension.md).
 
 	*	If the extension is a paid extension, the Azure subscription used for billing might be unlinked from your organization or might no longer be active. Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md) or visit the [Azure portal](https://account.windowsazure.com/subscriptions) to check payment details.
 

@@ -7,8 +7,8 @@ ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: jillfra
 monikerRange: '>= tfs-2013'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 06/27/2017
 ---
 
@@ -31,12 +31,12 @@ To learn about C# programming within Visual Studio, find the [Visual Studio C# p
 There are a few things happening in the code sample below:
 
 1. Authenticating
-    0. Create credentials using your PAT
-    0. Generate the client
-1. Get the work items
-    0. Create the query you want to use
-    0. Get the results for that query
-    0. Get each of the work items by ID
+   1. Create credentials using your PAT
+   2. Generate the client
+2. Get the work items
+   1. Create the query you want to use
+   2. Get the results for that query
+   3. Get each of the work items by ID
 
 ## C# code snippet
 ```cs

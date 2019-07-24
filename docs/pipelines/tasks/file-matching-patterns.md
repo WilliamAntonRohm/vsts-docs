@@ -9,7 +9,7 @@ ms.assetid: 8A92C09C-3EE2-48EF-A2C0-3B2005AACFD7
 ms.manager: jillfra
 ms.author: alewis
 author: andyjlewis
-ms.date: 01/14/2019
+ms.date: 07/03/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -22,6 +22,7 @@ monikerRange: '>= tfs-2015'
 A pattern is a string or list of newline-delimited strings.
 File and directory names are compared to patterns to include (or sometimes exclude) them in a task.
 You can build up complex behavior by stacking multiple patterns.
+See [fnmatch](http://man7.org/linux/man-pages/man3/fnmatch.3.html) for a full syntax guide.
 
 ### Match characters
 
@@ -50,7 +51,9 @@ Note, extended globs cannot span directory separators. For example, `+(hello/wor
 Patterns that begin with `#` are treated as comments.
 
 ### Exclude patterns
-Leading `!` changes the meaning of an include pattern to exclude. Interleaved exclude patterns are supported.
+Leading `!` changes the meaning of an include pattern to exclude.
+You can include a pattern, exclude a subset of it, and then re-include a subset of that:
+this is known as an "interleaved" pattern.
 
 Multiple `!` flips the meaning. See <a href="#doubleexcl_examples">examples</a>.
 
@@ -171,6 +174,22 @@ SampleE.dat
 SampleG.dat
 ```
 
+#### Recursive wildcard examples
+
+Given the pattern `**/*.ext` and files:
+```
+sample1/A.ext
+sample1/B.ext
+sample2/C.ext
+sample2/D.not
+```
+The pattern would match:
+```
+sample1/A.ext
+sample1/B.ext
+sample2/C.ext
+```
+
 ### Exclude pattern examples
 
 Given the pattern:
@@ -220,3 +239,5 @@ Fabrikam.dll
 Fabrikam.pdb
 Fabrikam.xml
 ```
+
+### 
